@@ -24,6 +24,7 @@ jobs:
     steps:
 
       # Runs a single command using the runners shell
-      - name: CLONE
+      - name: clone
+        run: gh auth login
         run: gh repo clone ValiMail/authentication-headers
     
